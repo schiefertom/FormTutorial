@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormTutorial</title>
+</head>
+<body>
+<form action="results.html" method="GET" enctype="multipart/form-data">
+    <div>
+        <label for="name">Name</label>
+        <input name="name" id="name" type="text" value="Thomas Schiefer" required>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="schiefertom@gmail.com" required>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="41" min="1" max="150" step="1">
+    </div>
+    <div>
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" value="1981-04-02" min="1900-01-01">
+    </div>
+    <div>
+        Favorite Foods
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+            <label for="apple">Apple</label>
+            <input type="checkbox" name="apple" id="apple">
+        </div>
+    </div>
+    <div>
+        <label for="eyeColor">Eye Color</label>
+        <select name="eyeColor" id="eyeColor" multiple>
+            <option value="green">Grün</option>
+            <option value="blue">Blau</option>
+            <option label="Braun" value="brown"/>
+        </select>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" value="meinPasswort123!" required>
+    </div>
+    <div>
+        <input type="hidden" name="hiddenField" id="hiddenField" value="some hidden text">
+    </div>
+    <div>
+        <label for="file">Upload file</label>
+        <input type="file" name="file" id="file">
+    </div>
+</form>
+    <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </div>
+
+</body>
+</html>
